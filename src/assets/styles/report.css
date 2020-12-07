@@ -1,0 +1,131 @@
+.industry_status {
+  min-height: 1200px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.report_cont {
+  width: 794px;
+  margin: auto;
+  padding: 40px;
+  background: #fff;
+}
+
+.chart {
+  float: left;
+  width: 50%;
+  height: 400px;
+}
+
+/* 报告css */
+.cover {
+  position: relative;
+  box-sizing: border-box;
+  height: 1060px;
+  margin-bottom: 80px;
+  padding: 40px;
+  border: 1px solid #e6e6e6;
+}
+
+.page1 {
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+
+  /* height: 1060px; */
+  padding: 40px;
+}
+
+/* 报告标题 */
+.cover_title {
+  padding: 150px 0;
+  font-size: 62px;
+  text-align: center;
+}
+
+/* 报告封面内容 */
+.cover_cont {
+  width: 600px;
+  margin: auto;
+}
+
+.cover_cont p {
+  height: 45px;
+  font-size: 18px;
+  line-height: 45px;
+}
+
+.cover_footer {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.cover_footer p {
+  font-size: 14px;
+}
+
+/* end */
+
+/* 第一页 */
+.report_cont h3 {
+  height: 60px;
+  margin-top: 25px;
+  font-size: 22px;
+  line-height: 50px;
+  text-align: center;
+}
+.report_cont h3 b {
+  color: #2d76ff;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.report_cont h4 {
+  height: 30px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.page1 table {
+  float: left;
+  width: 40%;
+}
+.page9 table,
+.page_score table {
+  width: 100%;
+}
+
+.page1 table tr td,
+.page_score table tr td {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 18px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+}
+
+.page1 table tr td.w50 {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+.page9 table tr td,
+.page9 table th {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0 5px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.page1 table tr td:nth-child(2) {
+  text-align: center;
+}
+
+/* end */

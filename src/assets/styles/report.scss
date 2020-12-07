@@ -1,0 +1,353 @@
+/* stylelint-disable */
+.industry_status {
+  width: 794px;
+  min-height: 1200px;
+  margin: auto;
+  padding: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+// .report {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // z-index: 99;
+  // width: 100%;
+  // height: 100%;
+  // overflow-y: scroll;
+  // background: rgba(0, 0, 0, 0.5);
+// }
+.report_cont {
+  box-sizing: border-box;
+  width: 794px;
+  margin: auto;
+  // padding: 0px 40px;
+  h3, h2 {
+    // height: 40px;
+    // margin-bottom: 20px;
+    // font-size: 18px;
+    // line-height: 40px;
+    color: #2E74B5;
+  }
+  h4 {
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+.chart {
+  float: left;
+  width: 50%;
+  height: 400px;
+}
+
+/* 报告css */
+.cover {
+  position: relative;
+  box-sizing: border-box;
+  height: 1123px;
+  margin-bottom: 40px;
+  padding: 20px;
+  .report_number {
+    font-size: 14px;
+    text-align: right;
+  }
+}
+.page1 {
+  background: #fff;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  padding: 20px;
+  .list_title {
+    font-size: 22px;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+  .list {
+    margin: 0;
+    padding: 0;
+    li {
+      position: relative;
+      font-size: 13px;
+      // font-family: "黑体";
+      line-height: 26px;
+      list-style: none;
+      overflow: hidden;
+      font-weight: bold;
+      div {
+        display: inline-block;
+      }
+      .L0 {
+        // color: #0072ff;
+        font-weight: 800;
+      }
+      .L1 {
+        padding-left: 20px;
+      }
+      .L2 {
+        padding-left: 40px;
+      }
+    }
+  }
+  table {
+    tr {
+      th {
+        background: #F2F2F2;
+        box-sizing: border-box;
+        padding: 0 5px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 30px;
+        border: 1px solid #000;
+        font-weight: bold;
+        color: #000;
+      }
+      td {
+        text-align: center;
+        box-sizing: border-box;
+        height: 30px;
+        padding: 0 5px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 30px;
+        border: 1px solid #000;
+        &.td_cont {
+          width: 150px;
+        }
+        &:nth-child(2) {
+          text-align: center;
+        }
+      }
+      // &:nth-child(odd) {
+      //   background: #d9ebff;
+      // }
+    }
+    &.tab {
+      tr {
+        &:nth-child(odd) {
+          background: #fff;
+        }
+        // &:nth-child(even) {
+        //   background: #d9ebff;
+        // }
+        &.title {
+          color: #fff;
+          background: #0053d0;
+        }
+      }
+    }
+  }
+  h4, h3 {
+    color: #2E74B5;
+  }
+}
+
+.table-noborder {
+  .el-row {
+    margin: 16px 0px;
+    line-height: 20px;
+    width: 100%;
+    .el-col:first-child {
+      font-weight: bold;
+      color: #000;
+      font-size: 15px;
+    }
+  }
+}
+
+/* 报告标题 */
+.cover_title {
+  padding: 150px 0;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* 报告封面内容 */
+.cover_cont {
+  width: 600px;
+  margin: auto;
+  p {
+    height: 45px;
+    font-size: 18px;
+    line-height: 45px;
+  }
+}
+.cover_footer {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  p {
+    font-size: 14px;
+  }
+}
+
+/* end */
+
+/* 第一页 */
+.report_statement {
+  h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 36px;
+  }
+  ol {
+    margin: 0;
+    padding: 0;
+    li {
+      position: relative;
+      padding-left: 20px;
+      color: #464646;
+      font-size: 14px;
+      line-height: 36px;
+      list-style: none;
+      &::before {
+        position: absolute;
+        top: 12px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #00957e;
+        -ms-transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+        transform:rotate(45deg);
+
+ /* Internet Explorer */
+
+ /* Firefox */
+
+ /* Safari 和 Chrome */
+        -o-transform:rotate(45deg); /* Opera */
+        content: "";
+      }
+      
+    }
+    
+  }
+}
+.list-line {
+  position: absolute;
+  top: 22px;
+  width: 90%;
+  margin: 0 5px;
+  border-top: 1px dashed #bcbcbc;
+}
+.list-con1 {
+  position: absolute;
+  right: 0;
+  z-index: 100;
+  padding: 0 5px;
+  padding-right: 15px;
+  text-align: right;
+  background: #fff;
+}
+.page1 table,
+.page9 table,
+.page_score table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.page1 table tr th.td_title,
+.page1 table tr td.td_title {
+  width: 100px;
+  font-weight: 600;
+}
+.el-main {
+  padding: 0;
+}
+.page1 .uls {
+  margin: 0;
+  padding: 0;
+  border: 1px solid#000;
+  border-bottom: none;
+  .lis, .olis {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    line-height: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 12px;
+    .tab_titles {
+      width: 140px;
+      height: 60px;
+      line-height: 60px;
+      display: table;
+      font-weight: normal;
+      padding: 0 10px;
+      border-right: 1px solid #000;
+    }
+    .th_titles {
+      width: 140px;
+      display: table;
+      font-weight: normal;
+      padding: 0 10px;
+      border-right: 1px solid #000;
+      line-height: 30px;
+    }
+    .ths {
+      border-right: 1px solid #000;
+      font-weight: normal;
+      line-height: 30px;
+      text-align: center;
+      span {
+        padding: 0 10px;
+      }
+    }
+    .ths:last-child {
+      border: none;
+    }
+    .ths_w50 {
+      width: 50%;
+      border-right: 1px solid #000;
+      font-weight: normal;
+      overflow: hidden;
+      height: 30px;
+    }
+    .ths_w50:last-child {
+      border: none;
+    }
+  }
+  // .lis:nth-child(odd) {
+    // background: #d9ebff;
+  // }
+  .olis {
+    border-top: 1px solid #000;
+    border-bottom: 0;
+  }
+}
+.esc {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  padding: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.companyBaseInfo,
+.dl {
+  padding-top: 20px;
+}
+.companyBaseInfo p,
+.dl p,
+.line p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 30px;
+  text-align: justify;
+  text-indent: 2em;
+  text-justify: inter-ideograph;
+}
+
+/* end */
