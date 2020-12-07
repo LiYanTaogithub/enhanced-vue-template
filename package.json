@@ -1,8 +1,8 @@
 {
   "name": "managerSys",
   "version": "2.1.0",
-  "description": "银行管理系统",
-  "author": "数知",
+  "description": "后台管理系统",
+  "author": "leah",
   "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",

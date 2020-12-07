@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <span>{{bankName}}</span>
+    <span>后台管理系统</span>
     <div class="right-menu">
       <div class="hintimg"  @click="clickHint">
          <img src="../../assets/image/remind.png" alt="">

@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      title: '中小企业融资平台',
+      title: '后台管理系统',
       logo: logoImg
     }
   }
