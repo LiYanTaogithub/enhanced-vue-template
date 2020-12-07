@@ -1,15 +1,12 @@
 <template>
   <div class="navbar">
-    <!-- <hamburger id="hamburger-container" :is-active="sidebar.opened" class="hamburger-container" @toggleClick="toggleSideBar" />
-
-    <breadcrumb id="breadcrumb-container" class="breadcrumb-container" /> -->
     <span>{{bankName}}</span>
     <div class="right-menu">
       <div class="hintimg"  @click="clickHint">
          <img src="../../assets/image/remind.png" alt="">
          <div class="redporint" v-if="hintDisplay"></div>
       </div>
-     
+    
       <el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
         <div class="avatar-wrapper">
           <img :src="avatar" class="user-avatar">
@@ -30,26 +27,10 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import Breadcrumb from '@/components/Breadcrumb'
-import Hamburger from '@/components/Hamburger'
-import Screenfull from '@/components/Screenfull'
-import SizeSelect from '@/components/SizeSelect'
-import Search from '@/components/HeaderSearch'
-import RuoYiGit from '@/components/RuoYi/Git'
-import RuoYiDoc from '@/components/RuoYi/Doc'
 
 import router from "@/router";
 
 export default {
-  components: {
-    Breadcrumb,
-    Hamburger,
-    Screenfull,
-    SizeSelect,
-    Search,
-    RuoYiGit,
-    RuoYiDoc
-  },
   computed: {
     ...mapGetters([
       'sidebar',
@@ -107,28 +88,6 @@ export default {
   background: #304156;
   // box-shadow: 0 1px 4px rgba(0,21,41,.08);
   background-image: linear-gradient(#007a84,#00b5bb);
-
-  // .hamburger-container {
-  //   float: left;
-  //   height: 100%;
-  //   line-height: 46px;
-  //   cursor: pointer;
-  //   transition: background .3s;
-  //   -webkit-tap-highlight-color:transparent;
-
-  //   &:hover {
-  //     background: rgba(0, 0, 0, .025)
-  //   }
-  // }
-
-  // .breadcrumb-container {
-  //   float: left;
-  // }
-
-  // .errLog-container {
-  //   display: inline-block;
-  //   vertical-align: top;
-  // }
 
   .right-menu {
     display: flex;

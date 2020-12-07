@@ -67,52 +67,6 @@ export const constantRoutes = [
   //   ],
   // },
   {
-    path: "/report",
-    component: (resolve) =>
-      require(["@/views/components/report/reportDetails"], resolve),
-    name: "报告模板",
-  },
-  {
-    path: "/dict",
-    component: Layout,
-    hidden: true,
-    children: [
-      {
-        path: "type/data/:dictId(\\d+)",
-        component: (resolve) => require(["@/views/system/dict/data"], resolve),
-        name: "Data",
-        meta: { title: "字典数据", icon: "" },
-      },
-    ],
-  },
-  {
-    path: "/job",
-    component: Layout,
-    hidden: true,
-    children: [
-      {
-        path: "log",
-        component: (resolve) => require(["@/views/monitor/job/log"], resolve),
-        name: "JobLog",
-        meta: { title: "调度日志" },
-      },
-    ],
-  },
-  {
-    path: "/gen",
-    component: Layout,
-    hidden: true,
-    children: [
-      {
-        path: "edit/:tableId(\\d+)",
-        component: (resolve) =>
-          require(["@/views/tool/gen/editTable"], resolve),
-        name: "GenEdit",
-        meta: { title: "修改生成配置" },
-      },
-    ],
-  },
-  {
     path: "",
     component: Layout,
     children: [
@@ -129,47 +83,47 @@ export const constantRoutes = [
       },
     ],
   },
-  // {
-  //   path: "/my-financial-products",
-  //   // component: () => import("@/views/bank/my-financial-products"),
-  //   component: Layout,
-  //   redirect: "/my-financial-products/quick-loan-products",
-  //   meta: { title: "我的金融产品" },
-  //   children: [
-  //     {
-  //       path: "quick-loan-products",
-  //       component: () =>
-  //         import("@/views/bank/my-financial-products/quick-loan-products"),
-  //       name: "快贷产品管理",
-  //       meta: { title: "快贷产品管理" },
-  //     },
-  //     {
-  //       path: "no-quick-products",
-  //       component: () =>
-  //         import("@/views/bank/my-financial-products/no-quick-products"),
-  //       name: "非快贷产品管理",
-  //       meta: { title: "非快贷产品管理" },
-  //     },
-  //     {
-  //       path: "detail",
-  //       component: () =>
-  //         import("@/views/bank/my-financial-products/no-quick-products/detail"),
-  //       name: "金融产品详情",
-  //       meta: { title: "金融产品详情" },
-  //       hidden: true,
-  //     },
-  //     {
-  //       path: "products-info",
-  //       component: () =>
-  //         import(
-  //           "@/views/bank/my-financial-products/no-quick-products/products-info"
-  //         ),
-  //       name: "添加/修改金融产品",
-  //       meta: { title: "添加/修改金融产品" },
-  //       hidden: true,
-  //     },
-  //   ],
-  // },
+  {
+    path: "/my-financial-products",
+    // component: () => import("@/views/bank/my-financial-products"),
+    component: Layout,
+    redirect: "/my-financial-products/quick-loan-products",
+    meta: { title: "我的金融产品" },
+    children: [
+      {
+        path: "quick-loan-products",
+        component: () =>
+          import("@/views/bank/my-financial-products/quick-loan-products"),
+        name: "快贷产品管理",
+        meta: { title: "快贷产品管理" },
+      },
+      {
+        path: "no-quick-products",
+        component: () =>
+          import("@/views/bank/my-financial-products/no-quick-products"),
+        name: "非快贷产品管理",
+        meta: { title: "非快贷产品管理" },
+      },
+      {
+        path: "detail",
+        component: () =>
+          import("@/views/bank/my-financial-products/no-quick-products/detail"),
+        name: "金融产品详情",
+        meta: { title: "金融产品详情" },
+        hidden: true,
+      },
+      {
+        path: "products-info",
+        component: () =>
+          import(
+            "@/views/bank/my-financial-products/no-quick-products/products-info"
+          ),
+        name: "添加/修改金融产品",
+        meta: { title: "添加/修改金融产品" },
+        hidden: true,
+      },
+    ],
+  },
   // {
   //   path: "/financing-application-management",
   //   component: Layout,
