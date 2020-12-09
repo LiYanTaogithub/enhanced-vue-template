@@ -30,8 +30,8 @@ router.beforeEach((to, from, next) => {
           .then((res) => {
             notifyObj = connect(); // 获取完用户信息就开启通知
             // 拉取user_info
-            const roles = res.roles;
-            // 请求路由数据
+            // const roles = res.roles;
+            // // 请求路由数据
             // store.dispatch("GenerateRoutes", { roles }).then((accessRoutes) => {
             //   // 测试 默认静态页面
             //   // store.dispatch('permission/generateRoutes', { roles }).then(accessRoutes => {
