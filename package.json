@@ -1,6 +1,6 @@
 {
   "name": "managerSys",
-  "version": "2.1.0",
+  "version": "1.1.0",
   "description": "后台管理系统",
   "author": "leah",
   "license": "MIT",
@@ -39,7 +39,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/y_project/RuoYi-Vue.git"
+    "url": "https://github.com/LiYanTaogithub/enhanced-vue-template.git"
   },
   "dependencies": {
     "@riophae/vue-treeselect": "0.4.0",

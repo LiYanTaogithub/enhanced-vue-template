@@ -132,6 +132,14 @@ module.exports = {
         },
       });
       config.optimization.runtimeChunk("single");
+      config.externals({
+        // vue: "Vue",
+        // "vue-router": "VueRouter",
+        // Vuex: "Vuex",
+        // axios: "axios",
+        // echarts: "echarts",
+        // "element-ui": "ELEMENT",
+      });
     });
   },
 };
