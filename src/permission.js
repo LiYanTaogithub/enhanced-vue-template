@@ -31,13 +31,15 @@ router.beforeEach((to, from, next) => {
             notifyObj = connect(); // 获取完用户信息就开启通知
             // 拉取user_info
             const roles = res.roles;
-            store.dispatch("GenerateRoutes", { roles }).then((accessRoutes) => {
-              // 测试 默认静态页面
-              // store.dispatch('permission/generateRoutes', { roles }).then(accessRoutes => {
-              // 根据roles权限生成可访问的路由表
-              router.addRoutes(accessRoutes); // 动态添加可访问路由表
-              next({ ...to, replace: true }); // hack方法 确保addRoutes已完成
-            });
+            // 请求路由数据
+            // store.dispatch("GenerateRoutes", { roles }).then((accessRoutes) => {
+            //   // 测试 默认静态页面
+            //   // store.dispatch('permission/generateRoutes', { roles }).then(accessRoutes => {
+            //   // 根据roles权限生成可访问的路由表
+            //   // router.addRoutes(accessRoutes); // 动态添加可访问路由表
+            //   next({ ...to, replace: true }); // hack方法确保addRoutes已完成
+            // });
+            next({ ...to, replace: true });
           })
           .catch((err) => {
             store.dispatch("FedLogOut").then(() => {

@@ -12,7 +12,7 @@ import "@/assets/styles/common.scss"; // common css
 import App from "./App";
 import store from "./store";
 import router from "./router";
-import permission from "./directive/permission";
+// import permission from "./directive/permission";
 import { download } from "@/utils/request";
 
 import "./assets/icons"; // icon
@@ -64,7 +64,7 @@ Vue.prototype.msgInfo = function (msg) {
 Vue.component("Pagination", Pagination);
 Vue.component("RightToolbar", RightToolbar);
 
-Vue.use(permission);
+// Vue.use(permission);
 
 /**
  * If you don't want to use mock-server
